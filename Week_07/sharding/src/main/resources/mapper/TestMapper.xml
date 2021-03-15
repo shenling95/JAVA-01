@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.shenl.sharding.mapper.TestMapper">
+
+    <select id="selectById" parameterType="int" resultType="cn.shenl.sharding.entity.Test">
+
+        SELECT * FROM test WHERE id = #{id}
+
+    </select>
+
+    <insert id="insertOne" parameterType="cn.shenl.sharding.entity.Test">
+
+        INSERT INTO test(id,num)
+        VALUES(#{id}, #{num})
+
+    </insert>
+
+</mapper>

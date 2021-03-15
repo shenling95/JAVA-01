@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    first:
+      jdbc-url: jdbc:mysql://192.168.99.100:3316/geek?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=true
+      username: root
+      password: 123
+      driver-class-name: com.mysql.cj.jdbc.Driver
+#      type: com.alibaba.druid.pool.DruidDataSource
+    second:
+      jdbc-url: jdbc:mysql://192.168.99.100:3326/geek?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=true
+      username: root
+      password: 123
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: cn.shenl.mysql.entity
